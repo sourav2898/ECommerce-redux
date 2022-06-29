@@ -1,6 +1,5 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import img from "../iphone11.jpg";
 
 const Product = ({ data }) => {
   console.log(data);
@@ -17,12 +16,7 @@ const Product = ({ data }) => {
         },
       }}
     >
-      <img
-        width="100%"
-        height="75%"
-        src={data?.image?.url || img}
-        alt={data?.name}
-      />
+      <img width="100%" height="75%" src={data?.image?.url} alt={data?.name} />
       <Typography variant="h6" color="#1985b1">
         {data?.name || "Title"}
       </Typography>
